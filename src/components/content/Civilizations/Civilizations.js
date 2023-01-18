@@ -23,7 +23,7 @@ function Civilizations() {
     }
 
     const fetchCivilizations = () => {
-        const url = "http://age-of-empires-2-api.vercel.app/api/civilizations/all";
+        const url = "https://age-of-empires-2-api.vercel.app/api/civilizations/all";
         fetch(url)
             .then((response) => response.json())
             .then((result) => {

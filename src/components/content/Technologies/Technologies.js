@@ -23,7 +23,7 @@ function Technologies() {
     }
 
     const fetchTechnologies = () => {
-        const url = "http://age-of-empires-2-api.vercel.app/api/technologies/all";
+        const url = "https://age-of-empires-2-api.vercel.app/api/technologies/all";
         fetch(url)
             .then((response) => response.json())
           .then((result) => {

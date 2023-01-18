@@ -21,7 +21,7 @@ function Structures() {
     }
 
     const fetchStructures = () => {
-        const url = "http://age-of-empires-2-api.vercel.app/api/buildings/all";
+        const url = "https://age-of-empires-2-api.vercel.app/api/buildings/all";
         fetch(url)
             .then((response) => response.json())
             .then((result) => {
