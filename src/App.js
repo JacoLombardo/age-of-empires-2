@@ -13,8 +13,6 @@ import Units from "./components/content/Units/Units";
 import Structures from "./components/content/Structures/Structures";
 import Technologies from "./components/content/Technologies/Technologies";
 import { AuthContextProvider } from "./context/AuthContext";
-import { PaginationContextProvider } from "./context/PaginationContext";
-import { FavouriteContextProvider } from "./context/FavouriteContext";
 import DetailedTech from "./views/Detailed/DetailedTech";
 import DetailedStruc from "./views/Detailed/DetailedStruc";
 
@@ -22,8 +20,6 @@ function App() {
   return (
     <div className="App">
       <AuthContextProvider>
-        <FavouriteContextProvider>
-        <PaginationContextProvider>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/civilizations" element={<Civilizations />} />
@@ -41,8 +37,6 @@ function App() {
             <Route path="/favourites" element={<ProtectedRoute><Favourites /></ProtectedRoute>} />
             <Route path="*" element={<NoMatch />} />
           </Routes>
-        </PaginationContextProvider>
-        </FavouriteContextProvider>
       </AuthContextProvider>
     </div>
   );
