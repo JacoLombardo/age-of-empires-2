@@ -14,7 +14,7 @@ function DetailedUnit() {
   const [loading, setLoading] = useState(true);
   
   const fetchUnit = () => {
-    const url = `http://age-of-empires-2-api.vercel.app/api/units/byid?id=${id}`;
+    const url = `https://age-of-empires-2-api.vercel.app/api/units/byid?id=${id}`;
     fetch(url)
       .then((response) => response.json())
       .then((result) => {

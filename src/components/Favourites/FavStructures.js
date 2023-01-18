@@ -25,7 +25,7 @@ function FavStructures() {
   const fetchFavourites = async (myFav) => {
     const favouritesArray = await Promise.all(
       myFav.map(async (fav) => {
-        const url = `http://age-of-empires-2-api.vercel.app/api/buildings/byid?id=${fav}`;
+        const url = `https://age-of-empires-2-api.vercel.app/api/buildings/byid?id=${fav}`;
 
         const reponses = await fetch(url);
         const results = await reponses.json();

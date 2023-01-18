@@ -13,7 +13,7 @@ function DetailedCiv() {
   const [loading, setLoading] = useState(true);
   
   const fetchCivilization = () => {
-        const url = `http://age-of-empires-2-api.vercel.app/api/civilizations/byid?id=${id}`;
+        const url = `https://age-of-empires-2-api.vercel.app/api/civilizations/byid?id=${id}`;
         fetch(url)
             .then((response) => response.json())
             .then((result) => {

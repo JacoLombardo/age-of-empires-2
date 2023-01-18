@@ -13,7 +13,7 @@ function DetailedStruc() {
   const [loading, setLoading] = useState(true);
   
   const fetchStructure = () => {
-        const url = `http://age-of-empires-2-api.vercel.app/api/buildings/byid?id=${id}`;
+        const url = `https://age-of-empires-2-api.vercel.app/api/buildings/byid?id=${id}`;
         fetch(url)
             .then((response) => response.json())
             .then((result) => {

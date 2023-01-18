@@ -13,7 +13,7 @@ function DetailedTech() {
   const [loading, setLoading] = useState(true);
   
   const fetchTechnology = () => {
-        const url = `http://age-of-empires-2-api.vercel.app/api/technologies/byid?id=${id}`;
+        const url = `https://age-of-empires-2-api.vercel.app/api/technologies/byid?id=${id}`;
         fetch(url)
             .then((response) => response.json())
             .then((result) => {
