@@ -1,0 +1,39 @@
+.logoImg{
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.NavBar{
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    background: radial-gradient(#cc0000, #800000);
+    border-radius: 0px 0px 3px 3px;
+}
+
+.Brand > h1{
+    font-weight: bold;
+    color: black;
+    font-size: larger;
+    text-shadow: 2px 2px #b38600;
+}
+
+.Brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.dropdown-menu.show{
+    background: radial-gradient(#cc0000, #800000);
+}
+
+.NavBarLinks{
+    margin-left: 4px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.DropDownLinks{
+    font-size: large;
+    font-weight: bold;
+}
