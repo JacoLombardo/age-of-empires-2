@@ -23,19 +23,19 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/civilizations" element={<Civilizations />} />
-            <Route path="/civilizations/:id" element={<DetailedCiv />} />
+            <Route path="/civilizations/civ-:id" element={<DetailedCiv />} />
             <Route path="/units" element={<Units />} />
-            <Route path="/units/:id" element={<DetailedUnit />} />
+            <Route path="/units/unit-:id" element={<DetailedUnit />} />
             <Route path="/technologies" element={<Technologies />} />
-            <Route path="/technologies/:id" element={<DetailedTech />} />
+            <Route path="/technologies/tech-:id" element={<DetailedTech />} />
             <Route path="/structures" element={<Structures />} />
-            <Route path="/structures/:id" element={<DetailedStruc />} />
+            <Route path="/structures/struc-:id" element={<DetailedStruc />} />
             <Route path="/login" element={<LogIn />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/favourites/:id" element={<ProtectedRoute><DetailedUnit /></ProtectedRoute>} />
-            <Route path="/favourites/:id" element={<ProtectedRoute><DetailedCiv /></ProtectedRoute>} />
-            <Route path="/favourites/:id" element={<ProtectedRoute><DetailedTech /></ProtectedRoute>} />
-            <Route path="/favourites/:id" element={<ProtectedRoute><DetailedStruc /></ProtectedRoute>} />
+            <Route path="/favourites/unit-:id" element={<ProtectedRoute><DetailedUnit /></ProtectedRoute>} />
+            <Route path="/favourites/civ-:id" element={<ProtectedRoute><DetailedCiv /></ProtectedRoute>} />
+            <Route path="/favourites/tech-:id" element={<ProtectedRoute><DetailedTech /></ProtectedRoute>} />
+            <Route path="/favourites/struc-:id" element={<ProtectedRoute><DetailedStruc /></ProtectedRoute>} />
             <Route path="/favourites" element={<ProtectedRoute><Favourites /></ProtectedRoute>} />
             <Route path="*" element={<NoMatch />} />
           </Routes>
