@@ -23,17 +23,19 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/civilizations" element={<Civilizations />} />
-            <Route path="/civilizations/civilization-:id" element={<DetailedCiv />} />
+            <Route path="/civilizations/:id" element={<DetailedCiv />} />
             <Route path="/units" element={<Units />} />
-            <Route path="/units/unit-:id" element={<DetailedUnit />} />
+            <Route path="/units/:id" element={<DetailedUnit />} />
             <Route path="/technologies" element={<Technologies />} />
-            <Route path="/technologies/technology-:id" element={<DetailedTech />} />
+            <Route path="/technologies/:id" element={<DetailedTech />} />
             <Route path="/structures" element={<Structures />} />
-            <Route path="/structures/structure-:id" element={<DetailedStruc />} />
+            <Route path="/structures/:id" element={<DetailedStruc />} />
             <Route path="/login" element={<LogIn />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/favourites/unit-:id" element={<ProtectedRoute><DetailedUnit /></ProtectedRoute>} />
-            <Route path="/favourites/civilization-:id" element={<ProtectedRoute><DetailedCiv /></ProtectedRoute>} />
+            <Route path="/favourites/units/:id" element={<ProtectedRoute><DetailedUnit /></ProtectedRoute>} />
+            <Route path="/favourites/civilizations/:id" element={<ProtectedRoute><DetailedCiv /></ProtectedRoute>} />
+            <Route path="/favourites/technologies/:id" element={<ProtectedRoute><DetailedTech /></ProtectedRoute>} />
+            <Route path="/favourites/structures/:id" element={<ProtectedRoute><DetailedStruc /></ProtectedRoute>} />
             <Route path="/favourites" element={<ProtectedRoute><Favourites /></ProtectedRoute>} />
             <Route path="*" element={<NoMatch />} />
           </Routes>

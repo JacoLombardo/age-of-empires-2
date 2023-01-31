@@ -82,7 +82,7 @@ function Civilization({ data }) {
           }) :
               <Link onClick={addFavourite} style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}><img src={FavouriteIcon} alt="favourite" title="Add to favourites!" className="favouriteIconCiv"></img></Link>)}
         </div>
-        <Link to={`civilization-${data.id}`}><img src={Info} alt="info" title="More info" className="infoCiv"></img></Link>
+        <Link to={`civilizations/${data.id}`}><img src={Info} alt="info" title="More info" className="infoCiv"></img></Link>
       </div>
     </>
   )

@@ -2,9 +2,9 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import NavBar from '../.././components/NavBar/NavBar'
 import Loader from '../.././components/Loader/Loader';
-import { HashLink } from 'react-router-hash-link';
 import { AuthContext } from '../.././context/AuthContext';
 import Chat from '../.././components/Chat/Chat';
+import { Link } from 'react-router-dom';
 
 function DetailedUnit() {
 
@@ -61,7 +61,7 @@ function DetailedUnit() {
               </div>}
               {detailedUnit.trained_at && <div className="detailedInfo">
                   <p className="classInfo">Trained At:&nbsp;&nbsp;&nbsp; </p>
-                  <HashLink to={`/structures/#${detailedUnit.trained_at[0].id}`} className="textInfo">{detailedUnit.trained_at[0].name}</HashLink>
+                  <Link to={`/structures/${detailedUnit.trained_at[0].id}`} className="textInfo">{detailedUnit.trained_at[0].name}</Link>
                 </div>}
             </div>
               <img className="detailedImgCiv" src={detailedUnit.image} alt={detailedUnit.name}></img>
