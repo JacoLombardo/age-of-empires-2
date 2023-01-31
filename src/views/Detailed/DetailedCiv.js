@@ -49,11 +49,11 @@ function DetailedCiv() {
             </div>
                 {detailedCivilization.unique_unit && <div className="detailedInfo">
                   <p className="classInfo">Unique Unit:&nbsp;&nbsp;&nbsp; </p>
-                  <Link to={`/units/${detailedCivilization.unique_unit[0].id}`} className="textInfo">{detailedCivilization.unique_unit[0].name}</Link>
+                  <Link to={`u-${detailedCivilization.unique_unit[0].id}`} className="textInfo">{detailedCivilization.unique_unit[0].name}</Link>
                 </div>}
                 {detailedCivilization.unique_tech && <div className="detailedInfo">
                   <p className="classInfo">Unique Technology:&nbsp;&nbsp;&nbsp; </p>
-                  <Link to={`/technologies/${detailedCivilization.unique_tech[0].id}`} className="textInfo">{detailedCivilization.unique_tech[0].name}</Link>
+                  <Link to={`t-${detailedCivilization.unique_tech[0].id}`} className="textInfo">{detailedCivilization.unique_tech[0].name}</Link>
                 </div>}
             </div>
             <img className="detailedImgCiv" src={detailedCivilization.banner} alt={detailedCivilization.name}></img>
