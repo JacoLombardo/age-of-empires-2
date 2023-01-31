@@ -61,7 +61,7 @@ function DetailedUnit() {
               </div>}
               {detailedUnit.trained_at && <div className="detailedInfo">
                   <p className="classInfo">Trained At:&nbsp;&nbsp;&nbsp; </p>
-                  <Link to={`s-${detailedUnit.trained_at[0].id}`} className="textInfo">{detailedUnit.trained_at[0].name}</Link>
+                  <Link to={`structures/s-${detailedUnit.trained_at[0].id}`} className="textInfo">{detailedUnit.trained_at[0].name}</Link>
                 </div>}
             </div>
               <img className="detailedImgCiv" src={detailedUnit.image} alt={detailedUnit.name}></img>

@@ -52,7 +52,7 @@ function DetailedTech() {
             </div>
                 {detailedTechnology.researched_at && <div className="detailedInfo">
                   <p className="classInfo">Researched At:&nbsp;&nbsp;&nbsp; </p>
-                  <Link to={`s-${detailedTechnology.researched_at[0].id}`} className="textInfo">{detailedTechnology.researched_at[0].name}</Link>
+                  <Link to={`/structures/s-${detailedTechnology.researched_at[0].id}`} className="textInfo">{detailedTechnology.researched_at[0].name}</Link>
                 </div>}
             </div>
             <img className="detailedImgCiv" src={detailedTechnology.image} alt={detailedTechnology.name}></img>
