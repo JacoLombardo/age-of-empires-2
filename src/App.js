@@ -32,10 +32,10 @@ function App() {
             <Route path="/structures/:id" element={<DetailedStruc />} />
             <Route path="/login" element={<LogIn />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/favourites/units/:id" element={<ProtectedRoute><DetailedUnit /></ProtectedRoute>} />
-            <Route path="/favourites/civilizations/:id" element={<ProtectedRoute><DetailedCiv /></ProtectedRoute>} />
-            <Route path="/favourites/technologies/:id" element={<ProtectedRoute><DetailedTech /></ProtectedRoute>} />
-            <Route path="/favourites/structures/:id" element={<ProtectedRoute><DetailedStruc /></ProtectedRoute>} />
+            <Route path="/favourites/:id" element={<ProtectedRoute><DetailedUnit /></ProtectedRoute>} />
+            <Route path="/favourites/:id" element={<ProtectedRoute><DetailedCiv /></ProtectedRoute>} />
+            <Route path="/favourites/:id" element={<ProtectedRoute><DetailedTech /></ProtectedRoute>} />
+            <Route path="/favourites/:id" element={<ProtectedRoute><DetailedStruc /></ProtectedRoute>} />
             <Route path="/favourites" element={<ProtectedRoute><Favourites /></ProtectedRoute>} />
             <Route path="*" element={<NoMatch />} />
           </Routes>
