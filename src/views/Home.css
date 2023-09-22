@@ -43,6 +43,9 @@
   #menuButton5 {
     grid-area: 12 / 3 / 13 / 6;
   }
+  .logoHomepage {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -95,11 +98,17 @@
   #menuGridButton1 > button {
     width: 100%;
   }
+  .logoHomepage {
+    display: block;
+    position: absolute;
+    width: 90%;
+    top: 10%;
+    left: 5%;
+  }
 }
 
 .menuButton {
   height: 44px;
-  /* width: 432px; */
   background: radial-gradient(#ff0000, #800000);
   font-weight: bold;
   color: #ffcc00;
@@ -109,7 +118,6 @@
 
 .menuGridButtonsLogOut {
   height: 38px;
-  /* width: 240px; */
   background: radial-gradient(#ff0000, #800000);
   font-weight: bold;
   color: #ffcc00;
@@ -119,7 +127,6 @@
 
 #menuGridButton2 > button {
   height: 38px;
-  /* width: 240px; */
   background: radial-gradient(#ff0000, #800000);
   font-weight: bold;
   color: #ffcc00;
@@ -129,32 +136,9 @@
 
 #menuGridButton1 > button {
   height: 38px;
-  /* width: 246px; */
   background: radial-gradient(#ff0000, #800000);
   font-weight: bold;
   color: #ffcc00;
   font-size: larger;
   text-shadow: 2px 2px black;
 }
-
-/* #menuGridButton1 {
-  grid-area: 2 / 2 / 3 / 4;
-}
-#menuGridButton2 {
-  grid-area: 2 / 5 / 3 / 7;
-}
-#menuButton1 {
-  grid-area: 4 / 3 / 5 / 6;
-}
-#menuButton2 {
-  grid-area: 6 / 3 / 7 / 6;
-}
-#menuButton3 {
-  grid-area: 8 / 3 / 9 / 6;
-}
-#menuButton4 {
-  grid-area: 10 / 3 / 11 / 6;
-}
-#menuButton5 {
-  grid-area: 12 / 3 / 13 / 6;
-} */

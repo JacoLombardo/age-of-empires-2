@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
+import LogoImage from "../Images/Logo/Logo.png";
 
 function Home() {
   const { user, logout } = useContext(AuthContext);
@@ -9,7 +10,9 @@ function Home() {
   return (
     <div className="homeDiv">
       <div className="gridMenu">
-        <div></div>
+        <div>
+          <img alt="logo" src={LogoImage} className="logoHomepage"></img>
+        </div>
         {!user ? (
           <Link to="/register" id="menuGridButton1">
             <button className="menuGridButtons">Register</button>
